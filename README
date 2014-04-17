@@ -1,0 +1,8 @@
+// This is the source for an application i am making for my track and field coach
+// it is for ios and the main point on github is for easy access between working on the mac at school and linux box at home
+// basically, the point is to automatically have the timer start itself at the perfect time so there is no need to watch
+// The plan is to always be listening to the mic when the app is running (even in background) and start when a sudden spike
+// in gain input from the microphone is detected
+// the gain of the ambient noise in this sense is (theoretically) much less than the potential gain of the starting gun
+// at some point, the coach should be able to hold his/her device at the finish line so they can see when their runners
+// finish, because an auto stop on the timer based on who finishes is out of the scope of this project.
