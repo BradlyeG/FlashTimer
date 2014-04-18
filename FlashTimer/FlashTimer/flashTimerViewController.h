@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface flashTimerViewController : UIViewController
+@interface flashTimerViewController : UIViewController{
+    
+}
 
+@property (nonatomic, retain)UILabel* mainTimer;
+-(IBAction)startStopButton:(id)sender;
+-(IBAction)splitButton:(id)sender;
 @end

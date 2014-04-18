@@ -203,6 +203,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = DCHS;
 				TargetAttributes = {
+					249D6C5319017B3200595288 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					249D6C7719017B3200595288 = {
 						TestTargetID = 249D6C5319017B3200595288;
 					};

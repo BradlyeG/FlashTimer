@@ -14,6 +14,8 @@
 
 @implementation flashTimerViewController
 
+@synthesize mainTimer;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+-(IBAction)startStopButton:(id)sender{
+    mainTimer.text = @"Start/Stop Button was pressed";
+}
+
+-(IBAction)splitButton:(id)sender{
+    mainTimer.text = @"Split button was pressed";
 }
 
 @end
