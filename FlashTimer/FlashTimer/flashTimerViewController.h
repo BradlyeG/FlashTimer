@@ -13,6 +13,7 @@
 }
 
 @property (nonatomic, retain)UILabel* mainTimer;
+@property (nonatomic, retain)UITableView* splitTable;
 -(IBAction)startStopButton:(id)sender;
 -(IBAction)splitButton:(id)sender;
 @end

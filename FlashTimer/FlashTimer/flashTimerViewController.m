@@ -12,9 +12,12 @@
 
 @end
 
-@implementation flashTimerViewController
+@implementation flashTimerViewController{
+    NSTimer* timer;
+}
 
 @synthesize mainTimer;
+@synthesize splitTable;
 
 - (void)viewDidLoad
 {
@@ -30,12 +33,21 @@
 
 
 
--(IBAction)startStopButton:(id)sender{
-    mainTimer.text = @"Start/Stop Button was pressed";
+-(IBAction)startStopButton:(id)sender
+{
+    //mainTimer.text = @"Start/Stop Button was pressed";
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
+    
 }
 
--(IBAction)splitButton:(id)sender{
+-(IBAction)splitButton:(id)sender
+{
     mainTimer.text = @"Split button was pressed";
+}
+
+-(void)increaseTimerCount
+{
+    mainTimer.text = [NSString stringWithFormat:@"%@", timer];
 }
 
 @end
