@@ -1,14 +1,14 @@
 //
-//  flashTimerAppDelegate.m
+//  FlashTimerAppDelegate.m
 //  FlashTimer
 //
-//  Created by sync on 4/18/14.
+//  Created by sync on 4/29/14.
 //  Copyright (c) 2014 DCHS. All rights reserved.
 //
 
-#import "flashTimerAppDelegate.h"
+#import "FlashTimerAppDelegate.h"
 
-@implementation flashTimerAppDelegate
+@implementation FlashTimerAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

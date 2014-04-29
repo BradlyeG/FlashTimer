@@ -1,23 +1,18 @@
 //
-//  flashTimerViewController.m
+//  FlashTimerViewController.m
 //  FlashTimer
 //
-//  Created by sync on 4/18/14.
+//  Created by sync on 4/29/14.
 //  Copyright (c) 2014 DCHS. All rights reserved.
 //
 
-#import "flashTimerViewController.h"
+#import "FlashTimerViewController.h"
 
-@interface flashTimerViewController ()
+@interface FlashTimerViewController ()
 
 @end
 
-@implementation flashTimerViewController{
-    NSTimer* timer;
-}
-
-@synthesize mainTimer;
-@synthesize splitTable;
+@implementation FlashTimerViewController
 
 - (void)viewDidLoad
 {
@@ -29,25 +24,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-
--(IBAction)startStopButton:(id)sender
-{
-    //mainTimer.text = @"Start/Stop Button was pressed";
-    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
-    
-}
-
--(IBAction)splitButton:(id)sender
-{
-    mainTimer.text = @"Split button was pressed";
-}
-
--(void)increaseTimerCount
-{
-    mainTimer.text = [NSString stringWithFormat:@"%@", timer];
 }
 
 @end

@@ -1,19 +1,13 @@
 //
-//  flashTimerViewController.h
+//  FlashTimerViewController.h
 //  FlashTimer
 //
-//  Created by sync on 4/18/14.
+//  Created by sync on 4/29/14.
 //  Copyright (c) 2014 DCHS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface flashTimerViewController : UIViewController{
-    
-}
+@interface FlashTimerViewController : UIViewController
 
-@property (nonatomic, retain)UILabel* mainTimer;
-@property (nonatomic, retain)UITableView* splitTable;
--(IBAction)startStopButton:(id)sender;
--(IBAction)splitButton:(id)sender;
 @end
