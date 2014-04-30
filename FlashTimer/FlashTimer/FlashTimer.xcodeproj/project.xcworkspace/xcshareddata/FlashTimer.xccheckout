@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F793FD94-EE56-40C4-B601-D4861CB8A7EF</string>
+	<string>9A2EE728-5889-413D-8B71-D34A34C1EF19</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FlashTimer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/BradlyeG/FlashTimer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FlashTimer/FlashTimer.xcodeproj/project.xcworkspace</string>
+	<string>FlashTimer/FlashTimer/FlashTimer.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C0FCFA13-E0E8-400A-8FA4-BC8E48A087E8</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/BradlyeG/FlashTimer.git</string>

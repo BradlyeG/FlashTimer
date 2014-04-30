@@ -2,7 +2,7 @@
 //  FlashTimerViewController.m
 //  FlashTimer
 //
-//  Created by sync on 4/29/14.
+//  Created by sync on 4/30/14.
 //  Copyright (c) 2014 DCHS. All rights reserved.
 //
 

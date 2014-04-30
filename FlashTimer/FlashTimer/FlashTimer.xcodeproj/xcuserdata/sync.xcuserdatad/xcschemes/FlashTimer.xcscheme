@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "249D6C5319017B3200595288"
+               BlueprintIdentifier = "2468F68B191151BC007DAC4F"
                BuildableName = "FlashTimer.app"
                BlueprintName = "FlashTimer"
                ReferencedContainer = "container:FlashTimer.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "249D6C7719017B3200595288"
+               BlueprintIdentifier = "2468F6AF191151BC007DAC4F"
                BuildableName = "FlashTimerTests.xctest"
                BlueprintName = "FlashTimerTests"
                ReferencedContainer = "container:FlashTimer.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249D6C5319017B3200595288"
+            BlueprintIdentifier = "2468F68B191151BC007DAC4F"
             BuildableName = "FlashTimer.app"
             BlueprintName = "FlashTimer"
             ReferencedContainer = "container:FlashTimer.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249D6C5319017B3200595288"
+            BlueprintIdentifier = "2468F68B191151BC007DAC4F"
             BuildableName = "FlashTimer.app"
             BlueprintName = "FlashTimer"
             ReferencedContainer = "container:FlashTimer.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "249D6C5319017B3200595288"
+            BlueprintIdentifier = "2468F68B191151BC007DAC4F"
             BuildableName = "FlashTimer.app"
             BlueprintName = "FlashTimer"
             ReferencedContainer = "container:FlashTimer.xcodeproj">
