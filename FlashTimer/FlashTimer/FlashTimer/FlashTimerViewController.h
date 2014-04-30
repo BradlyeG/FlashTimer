@@ -10,4 +10,9 @@
 
 @interface FlashTimerViewController : UIViewController
 
+@property(nonatomic, retain)IBOutlet UILabel* mainTimerLabel;
+
+-(IBAction)mainTimerPress:(id)sender;
+-(IBAction)splitButtonPress:(id)sender;
+
 @end

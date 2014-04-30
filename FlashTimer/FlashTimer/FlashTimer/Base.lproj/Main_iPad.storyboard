@@ -32,6 +32,9 @@
                                     <color key="titleColor" red="0.69411766529999996" green="0.1098039299" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mainTimerPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Go6-5S-EzF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-v1-MhU">
                                 <rect key="frame" x="34" y="488" width="700" height="128"/>
@@ -42,11 +45,17 @@
                                     <color key="titleColor" red="0.69411766529999996" green="0.1098039299" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="splitButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ik5-Er-aWH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="mainTimerLabel" destination="JtF-Mh-c7X" id="MuT-VW-3va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

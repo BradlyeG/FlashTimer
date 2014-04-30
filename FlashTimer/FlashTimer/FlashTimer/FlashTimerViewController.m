@@ -14,6 +14,8 @@
 
 @implementation FlashTimerViewController
 
+@synthesize mainTimerLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)mainTimerPress:(id)sender
+{
+    
+}
+
+-(IBAction)splitButtonPress:(id)sender
+{
+    
 }
 
 @end
