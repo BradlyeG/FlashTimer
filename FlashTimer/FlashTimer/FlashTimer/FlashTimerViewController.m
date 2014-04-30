@@ -20,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    mainTimerLabel.text = @"0:00.0";
+    running = false;
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,12 +33,28 @@
 
 -(IBAction)mainTimerPress:(id)sender
 {
-    
+    if (running == false) {
+        running = true;
+        startTime = [NSDate timeIntervalSinceReferenceDate];
+        [sender setTitle:@"STOP" forState:UIControlStateNormal];
+        [self updateTime];
+    }
+    else
+    {
+        [sender setTitle:@"START" forState:UIControlStateNormal];
+        running = false;
+    }
 }
 
 -(IBAction)splitButtonPress:(id)sender
 {
     
 }
+
+-(void)updateTime
+{
+    
+}
+
 
 @end

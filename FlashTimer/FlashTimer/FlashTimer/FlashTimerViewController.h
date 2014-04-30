@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface FlashTimerViewController : UIViewController
+{
+    bool running;
+    NSTimeInterval startTime;
+}
 
 @property(nonatomic, retain)IBOutlet UILabel* mainTimerLabel;
 
