@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlashTimerViewController : UIViewController
+@interface FlashTimerViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
     bool running;
     NSTimeInterval startTime;
+    NSArray *splitData;
 }
 
 @property(nonatomic, retain)IBOutlet UILabel* mainTimerLabel;

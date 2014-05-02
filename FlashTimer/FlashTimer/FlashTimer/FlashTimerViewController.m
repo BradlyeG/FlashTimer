@@ -16,6 +16,7 @@
 
 @synthesize mainTimerLabel;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,6 +24,7 @@
     
     mainTimerLabel.text = @"0:00.00";
     running = false;
+    splitData = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,5 +75,23 @@
     [self performSelector:@selector(updateTime) withObject: self afterDelay:0.01];
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [splitData count];
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [splitData objectAtIndex:indexPath.row];
+    return cell;
+}
 
 @end
