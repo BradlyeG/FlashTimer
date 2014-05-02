@@ -53,7 +53,24 @@
 
 -(void)updateTime
 {
+    if(running == false)return;
     
+    //Calculate elapsed time
+    NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
+    NSTimeInterval elapsed = currentTime - startTime;
+    
+    //extracting out the minutes, seconds, and fractions of seconds from elapsed time:
+    int mins = (int)(elapsed / 60.0);
+    elapsed -= mins * 60;
+    int secs = (int)(elapsed);
+    elapsed -= secs;
+    int fraction = elapsed * 10.0;
+    
+    //update label
+    mainTimerLabel.text = [NSString stringWithFormat:@"%u:%02u.%u", mins, secs, fraction];
+    
+    // call updateTime again after .01 sec
+    [self performSelector:@selector(updateTime) withObject: self afterDelay:0.01];
 }
 
 
