@@ -22,6 +22,7 @@
 		2468F6B4191151BC007DAC4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2468F693191151BC007DAC4F /* UIKit.framework */; };
 		2468F6BC191151BC007DAC4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2468F6BA191151BC007DAC4F /* InfoPlist.strings */; };
 		2468F6BE191151BC007DAC4F /* FlashTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2468F6BD191151BC007DAC4F /* FlashTimerTests.m */; };
+		24F0012D1914064C00E94A8B /* D-Wing Foot Logo B&R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24F0012C1914064C00E94A8B /* D-Wing Foot Logo B&R.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2468F6B9191151BC007DAC4F /* FlashTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashTimerTests-Info.plist"; sourceTree = "<group>"; };
 		2468F6BB191151BC007DAC4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2468F6BD191151BC007DAC4F /* FlashTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashTimerTests.m; sourceTree = "<group>"; };
+		24F0012C1914064C00E94A8B /* D-Wing Foot Logo B&R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "D-Wing Foot Logo B&R.jpg"; path = "Images.xcassets/D-Wing Foot Logo B&R.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		2468F696191151BC007DAC4F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24F0012C1914064C00E94A8B /* D-Wing Foot Logo B&R.jpg */,
 				2468F697191151BC007DAC4F /* FlashTimer-Info.plist */,
 				2468F698191151BC007DAC4F /* InfoPlist.strings */,
 				2468F69B191151BC007DAC4F /* main.m */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F0012D1914064C00E94A8B /* D-Wing Foot Logo B&R.jpg in Resources */,
 				2468F6A6191151BC007DAC4F /* Main_iPad.storyboard in Resources */,
 				2468F6AB191151BC007DAC4F /* Images.xcassets in Resources */,
 				2468F6A3191151BC007DAC4F /* Main_iPhone.storyboard in Resources */,
@@ -471,6 +475,7 @@
 				2468F6C3191151BC007DAC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2468F6C4191151BC007DAC4F /* Build configuration list for PBXNativeTarget "FlashTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +484,7 @@
 				2468F6C6191151BC007DAC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

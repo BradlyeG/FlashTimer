@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    mainTimerLabel.text = @"0:00.0";
+    mainTimerLabel.text = @"0:00.00";
     running = false;
 }
 
@@ -64,7 +64,7 @@
     elapsed -= mins * 60;
     int secs = (int)(elapsed);
     elapsed -= secs;
-    int fraction = elapsed * 10.0;
+    int fraction = elapsed * 100.0;
     
     //update label
     mainTimerLabel.text = [NSString stringWithFormat:@"%u:%02u.%u", mins, secs, fraction];
