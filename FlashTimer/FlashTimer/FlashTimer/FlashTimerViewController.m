@@ -39,7 +39,7 @@
         running = true;
         startTime = [NSDate timeIntervalSinceReferenceDate];
         [sender setTitle:@"STOP" forState:UIControlStateNormal];
-        [self updateTime];
+        mainTimerLabel.text = [self updateTime];
     }
     else
     {
@@ -53,9 +53,11 @@
     
 }
 
--(void)updateTime
+-(NSString*)updateTime
 {
-    if(running == false)return;
+    NSString* returnTime;
+    
+    if(running == false)return nil;
     
     //Calculate elapsed time
     NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
@@ -69,10 +71,14 @@
     int fraction = elapsed * 100.0;
     
     //update label
-    mainTimerLabel.text = [NSString stringWithFormat:@"%u:%02u.%u", mins, secs, fraction];
+    //mainTimerLabel.text = [NSString stringWithFormat:@"%u:%02u.%u", mins, secs, fraction];
     
     // call updateTime again after .01 sec
     [self performSelector:@selector(updateTime) withObject: self afterDelay:0.01];
+    
+    returnTime = [NSString stringWithFormat:@"%u:%02u.%u", mins, secs, fraction];
+    
+    return returnTime;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
